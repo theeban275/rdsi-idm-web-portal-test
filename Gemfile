@@ -7,7 +7,6 @@ gem 'rails', '3.2.16'
 
 gem 'sqlite3'
 
-
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -18,6 +17,7 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  gem 'bootstrap-sass'
 end
 
 gem 'jquery-rails'
@@ -38,6 +38,7 @@ gem 'jquery-rails'
 # gem 'debugger'
     
 gem "therubyracer" # TODO should this be in group :assets ?
+
 group :development, :test do
   gem "rspec-rails"
   gem "factory_girl_rails"
@@ -49,6 +50,8 @@ group :development, :test do
   #gem "spork"
   gem "launchy"    # So you can do Then show me the page
   gem "zeus"
+
+  gem "rails_layout"
 end
 
 group :test do
@@ -58,4 +61,3 @@ end
 
 gem "haml"
 gem "haml-rails"
-gem "simplecov", :require => false, :group => :test
