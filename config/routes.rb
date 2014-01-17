@@ -1,4 +1,4 @@
-RdsiIdmWeb::Application.routes.draw do
+RDSIIDMWebPortal::Application.routes.draw do
   get "pages/home"
 
   root :to => "pages#home"
